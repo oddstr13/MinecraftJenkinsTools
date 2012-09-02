@@ -1,0 +1,8 @@
+Todo:
+ * Add caching of Forge installed on top of MCP - installing Forge every time wastes CPU time and electicity.
+    * Check for cached version if usemcp and useforge, if there is a cached version for the mcpversion and forge_build combination in question, use it.
+      If not, then create a cached version, a zip of the contents of mcp, without the modsource.
+      Example: cache/mcp-forge/mcp72-forge241.zip
+      If cached version does exist, use it.
+ * Move from using src/minecraft/ and src/minecraft_server/, and use src/, as the source and target when copying in place the source.
+ * Add config option to tell if reobf/minecraft/ is for the client only, or common for client and server.
